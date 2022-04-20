@@ -1,0 +1,128 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head>
+        <title>Q&A</title>
+    </head>
+    <body>
+    
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+body {
+    background-color: #ececec;
+    font-family: 'Nunito', sans-serif;
+    margin:5%;
+    /*min-height:100vh;*/
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    justify-content:center;
+    align-items:center;
+}
+.style
+{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding: 2px 10px 1px 10px;
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    webkit-appearance: none;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+    margin-bottom: 25px;
+}
+.header
+{
+    
+}
+.sub
+{
+    padding:10px;
+}
+
+p {
+    font-size: 16px;
+}
+h2 {
+    color: #35af89;
+}
+#color
+{
+    color: #35af89;
+}
+  
+  button[type='submit'] {
+    background-color: green;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight:bold;
+    color: white;
+  }      
+        
+    </style>
+        <div class="main">
+            <header class="style header">
+                 <h1 align="center"> Welcome  <%= name %> to Main Page</h1>
+            </header>
+           
+            <h2 align="center">Why question and answer`s group while there is Sololearn Q&A ???</h2>
+            
+            <div class="style">
+            <p>
+                This group was created so as to enable the easiest way to ask coding related questions. Here every contribution regarding programming is appreciated. 
+            </p>
+            </div>
+            
+            <div class="style">
+            <h2>Allowed</h2>
+            <p>
+                #You can always add a person after talk to him or her about this group and how we operate.
+            </p>
+            <p>
+                #As we all know the people have different attitudes in communities but when it comes to learning we should all have to respect each other and avoiding harsh languages. 
+            </p>
+            <p>
+                #Try to participate as much as you can. Learning by teaching the others is what makes you more great in what you're doing.
+            </p>
+            </div>
+           <div class="style sub">
+               <h2>Not allowed</h2>
+               <div class="subdonts">
+                   <p>#Don't change the heading of the group if your not authorized. Any suggestion please consulting.</p>
+                  <p> #Don't post advertisement
+                   <p>#Don't chit-chat (dont make stories), this is to avoid annoying others.</p>
+               </div>
+           </div>
+           
+           <footer id="color">
+               <p align="center">getHelp</p>
+               <P align="center">Q&A&copy;2021</P>
+                  <a href="/login">Login</a>
+     <br><br>
+       <a href="/register">Ragister</a>
+       
+<form action="/logout?_method=DELETE" method="POST">
+  <br><br>
+  <button type="submit">logout</button>
+</form>
+
+           </footer>
+                
+        </div>
+    </body>
+</html>

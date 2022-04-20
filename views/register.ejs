@@ -1,0 +1,69 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rigister page</title>
+</head>
+<br>
+<center><h1>Rigister page</h1></center>
+
+
+
+
+<form action="/register" method="POST" >
+ <div>
+   
+  <label for="name">name:</label>
+  <input type="text" id="name" name="name" required/>
+ </div>
+ <div>
+   
+  <br /><br />
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+  <br><br>
+  <label for="password">password:</label>
+  <input type="password" id="password" name="password" required>
+ </div>
+  <br><br>
+  <button type="submit">Rigister</button>
+  
+</form>
+
+
+
+<a href="/login">Login</a>
+<br><br>
+<a href="/">Home</a>
+
+
+<style>
+body{
+  background-color: #b1e9d5;
+}
+input[type='text'],[type='email'],[type='password']{
+    border: 1px solid green;
+    width: 100%;
+    padding: 8px;
+    color: bold;
+    font-weight: bold;
+    border-radius: 15px;
+  }
+  button[type='submit'] {
+    background-color: green;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight:bold;
+    color: white;
+  }
+  button[type='submit']:hover{
+    background-color: red;
+  }
+  label {
+    font-weight:bold ;
+    color: green;
+  }
+</style>
